@@ -1,11 +1,16 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Navbar from '../Components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
 
 const MainLayout = () => {
-  return (
-    <div>
-         <h2 className=''>Welcome to EasyMart</h2>
-    </div>
-  )
+    return (
+        <div>
+            <Navbar />
+            <Outlet />
+            {/* <Footer /> */}
+        </div>
+    )
 }
 
 export default MainLayout

@@ -1,11 +1,28 @@
 import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MainLayout from './Layouts/MainLayout';
+import Home from './Pages/Home/Home';
+import Products from './Pages/Products/Products';
 
 const App = () => {
-  return (
-    <div>
-       <h2 className=''>Welcome to EasyMart</h2>
-    </div>
-  )
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        {
+          path: '/', 
+          element: <Home />
+        },
+        {
+          path: '/products', 
+          element: <Products />
+        },
+      ]
+    },
+  ]);
+
+  return <RouterProvider router={router} />
 }
 
 export default App
