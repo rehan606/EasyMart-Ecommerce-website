@@ -7,8 +7,8 @@ const Navbar = () => {
     return (
         <div>
             <TopNavbar />
-            {/* <MiddleNavbar /> */}
-            {/* <BottomNavbar /> */}
+            <MiddleNavbar />
+            <BottomNavbar />
         </div>
     )
 }
