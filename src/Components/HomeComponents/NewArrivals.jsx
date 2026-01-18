@@ -61,10 +61,10 @@ const NewArrivals = () => {
         </div>
 
         {/* Products */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredProducts
             .sort((a, b) => b.rating - a.rating)
-            .slice(0, 10)
+            .slice(0, 8)
             .map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
