@@ -43,7 +43,7 @@ const Collection = () => {
                             <Button title="Shop Now" path="/products" />
                         </div>
                     </div>
-                    
+
                     {/* Collection Card 3 */}
                     <div
                         className='bg-cover h-80 flex items-center justify-end p-10 relative'

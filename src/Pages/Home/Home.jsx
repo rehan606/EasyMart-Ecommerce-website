@@ -5,6 +5,8 @@ import NewArrivals from '../../Components/HomeComponents/NewArrivals'
 import LatestBanner from '../../Components/HomeComponents/LetestBanner'
 import DayofDeal from '../../Components/HomeComponents/DayofDeal'
 import Collection from '../../Components/HomeComponents/Collection'
+import Features from '../../Components/HomeComponents/Features'
+
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
         <LatestBanner  />
         <DayofDeal />
         <Collection />
+        <Features />
     </div>
   )
 }
