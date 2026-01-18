@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import useData from '../../Hooks/useData'
 import ProductCard from '../ProductCard/ProductCard'
+import { Link } from 'react-router-dom'
 
 const NewArrivals = () => {
   const { categories, products } = useData()
@@ -19,7 +20,7 @@ const NewArrivals = () => {
 
   return (
     <section>
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-10 pb-10">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-10 gap-6">
           <SectionTitle
             title="New"
@@ -63,10 +64,13 @@ const NewArrivals = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {filteredProducts
             .sort((a, b) => b.rating - a.rating)
-            .slice(0, 5)
+            .slice(0, 10)
             .map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
+        </div>
+        <div className='flex justify-center mt-10 mx-auto'>
+          <Link to='/products' className="customBg text-white px-6 py-2 rounded-md  text-center ">View All Products</Link>
         </div>
       </div>
     </section>

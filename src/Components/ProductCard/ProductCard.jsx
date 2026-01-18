@@ -26,11 +26,11 @@ const ProductCard = ({ product }) => {
       {/* Badge */}
     
 
-      {badge && (
+      {/* {badge && (
         <span className={`${badge === 'NEW' ? 'bg-green-500' : badge === 'SALE' ? 'bg-red-600' : badge === 'HOT' ? 'bg-orange-500' : 'bg-blue-500'} absolute top-3 left-3 z-10 text-white text-xs font-semibold px-3 py-1 rounded-full`}>
           {badge}
         </span>
-      )}
+      )} */}
 
       {/* Image Section */}
       <div className="relative overflow-hidden bg-zinc-200/40">
@@ -49,7 +49,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         {/* Color Variants */}
-        <div className="absolute bottom-3 left-3 flex gap-2">
+        {/* <div className="absolute bottom-3 left-3 flex gap-2">
           {colors?.map((color, index) => (
             <span
               key={index}
@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
               className="w-4 h-4 rounded-full border border-white shadow cursor-pointer hover:scale-110 transition"
             />
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Content */}
@@ -83,7 +83,7 @@ const ProductCard = ({ product }) => {
 
         {/* Price */}
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-orange-500">
+          <span className="text-lg  textColor1">
             ৳{salePrice}
           </span>
           <span className="text-sm text-zinc-400 line-through">
