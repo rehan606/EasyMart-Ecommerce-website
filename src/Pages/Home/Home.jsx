@@ -4,6 +4,7 @@ import Category from '../../Components/HomeComponents/Category'
 import NewArrivals from '../../Components/HomeComponents/NewArrivals'
 import LatestBanner from '../../Components/HomeComponents/LetestBanner'
 import DayofDeal from '../../Components/HomeComponents/DayofDeal'
+import Collection from '../../Components/HomeComponents/Collection'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <NewArrivals />
         <LatestBanner  />
         <DayofDeal />
+        <Collection />
     </div>
   )
 }
