@@ -13,8 +13,8 @@ const Category = () => {
                         <div className='w-10 h-10 '>
                             <img src={category.image} alt={category.image} className='w-full h-full' />
                         </div>
-                        <h2 className='text-lg font-semibold'>{category.name}</h2>
-                        <p>{category.items}</p>
+                        <h2 className='text-lg '>{category.name}</h2>
+                        <p>{category.productCount}</p>
                     </div>
                 ))}
             </div>

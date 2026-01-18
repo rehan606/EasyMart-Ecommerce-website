@@ -1,44 +1,68 @@
 [
   {
     "id": 1,
-    "name": "Eggs",
-    "items": 154,
-    "discount": 0,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/category/c-1.png"
+    "name": "Clothes",
+    "categoryId": 102,
+    "slug": "clothes",
+    "icon": "tshirt",
+    "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+    "description": "Trendy and comfortable clothing for everyday wear.",
+    "productCount": 6,
+    "status": "active"
   },
   {
     "id": 2,
-    "name": "Clothes",
-    "items": 320,
-    "discount": 30,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/category/c-4.png"
+    "name": "Watch",
+    "categoryId": 101,
+    "slug": "watch",
+    "icon": "watch",
+    "image": "https://cdn-icons-png.flaticon.com/512/2972/2972528.png",
+    "description": "Modern and luxury watches for all occasions.",
+    "productCount": 4,
+    "status": "active"
   },
   {
     "id": 3,
-    "name": "Watches",
-    "items": 65,
-    "discount": 0,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
+    "name": "Sunglasses",
+    "categoryId": 103,
+    "slug": "sunglasses",
+    "icon": "sunglasses",
+    "image": "https://cdn-icons-png.flaticon.com/512/3461/3461844.png",
+    "description": "Stylish sunglasses with UV protection.",
+    "productCount": 4,
+    "status": "active"
   },
   {
     "id": 4,
-    "name": "Dresses",
-    "items": 548,
-    "discount": 15,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/category/c-1.png"
+    "name": "Cosmetics",
+    "categoryId": 104,
+    "slug": "cosmetics",
+    "icon": "cosmetics",
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+    "description": "Premium beauty and skincare products.",
+    "productCount": 4,
+    "status": "active"
   },
   {
     "id": 5,
-    "name": "Glasses",
-    "items": 48,
-    "discount": 10,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/category/c-4.png"
+    "name": "Shirt",
+    "categoryId": 105,
+    "slug": "shirt",
+    "icon": "shirt",
+    "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+    "description": "Formal and casual shirts for men.",
+    "productCount": 3,
+    "status": "active"
   },
   {
     "id": 6,
-    "name": "Cosmatics",
-    "items": 59,
-    "discount": 0,
-    "image": "https://maraviyainfotech.com/projects/grabit-tailwind/grabit-tailwind/assets/img/product-images/54_1.jpg"
+    "name": "Pant",
+    "categoryId": 106,
+    "slug": "pant",
+    "icon": "pant",
+    "image": "https://cdn-icons-png.flaticon.com/512/892/892467.png",
+    "description": "Comfortable pants and jeans for daily use.",
+    "productCount": 3,
+    "status": "active"
   }
 ]
