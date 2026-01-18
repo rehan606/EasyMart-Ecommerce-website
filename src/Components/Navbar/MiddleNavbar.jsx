@@ -7,7 +7,7 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 const MiddleNavbar = () => {
     return (
-        <section>
+        <section className='bg-white'>
             <div className='container mx-auto px-10'>
                 <div className='flex items-center justify-between py-4'>
                     {/* Logo */}
