@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import useData from "../../Hooks/useData"
+
 
 const Category = () => {
 
-    const [categories, setCategories] = useState([])
-
-    useEffect(() =>{
-        fetch('../../src/Data/category.json')
-        .then(res => res.json())
-        .then(data => setCategories(data))
-    })
-
-    // console.log(categories);
-
+    const {categories} = useData();
 
     return (
         <section className='container mx-auto px-10'>
