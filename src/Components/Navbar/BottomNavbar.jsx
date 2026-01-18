@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { BiCategory } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const categories = [
   "Electronics",
@@ -17,27 +18,33 @@ const countries = ["Bangladesh", "India", "USA", "UK", "Canada"];
 const menuItems = [
   {
     name: "Home",
-    submenu: ["Overview", "Updates"],
+    path: "/",
+    // submenu: ["Overview", "Updates"],
   },
   {
     name: "Categories",
-    submenu: ["Electronics", "Fashion", "Groceries"],
+    path: "/categories",
+    // submenu: ["Electronics", "Fashion", "Groceries"],
   },
   {
     name: "Products",
-    submenu: ["New Arrivals", "Best Sellers", "Top Rated"],
+    path: "/products",
+    // submenu: ["New Arrivals", "Best Sellers", "Top Rated"],
   },
   {
     name: "Blogs",
-    submenu: ["Latest Blogs", "Tech News", "Guides"],
+    path: "/blogs",
+    // submenu: ["Latest Blogs", "Tech News", "Guides"],
   },
   {
     name: "Offers",
-    submenu: ["Flash Sale", "Discounts", "Coupons"],
+    path: "/offers",
+    // submenu: ["Flash Sale", "Discounts", "Coupons"],
   },
   {
     name: "Others",
-    submenu: ["About Us", "Contact", "FAQ"],
+    path: "/others",
+    // submenu: ["About Us", "Contact", "FAQ"],
   },
 ];
 
@@ -47,7 +54,6 @@ const BottomNavbar = () => {
     const [countryOpen, setCountryOpen] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState("Country");
-    const [activeMobileMenu, setActiveMobileMenu] = useState(null);
 
     return (
         <section className="border-b border-t border-b-zinc-200 border-t-zinc-200 bg-white sticky top-0 z-30">
@@ -81,21 +87,30 @@ const BottomNavbar = () => {
                     <div className="hidden lg:flex items-center gap-8">
                         {menuItems.map((item) => (
                             <div key={item.name} className="relative group">
-                            <button className="flex items-center gap-1 font-medium text-gray-700 hover:text-[#F02640]">
-                                {item.name} <FaChevronDown className="text-xs" />
-                            </button>
+                                <ul>
+                                    <li className='flex items-center gap-1 font-medium text-gray-700 hover:text-[#F02640] '>
+                                        <NavLink to={`${item.path}`} 
+                                            className={({ isActive }) =>
+                                            isActive ? "textColor1" : "text-zinc-800"
+                                            } >
+                                            {item.name}
+                                        </NavLink>
+                                    </li>
+                                </ul>
 
-                            {/* Submenu */}
-                            <ul className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40">
-                                {item.submenu.map((sub) => (
-                                <li
-                                    key={sub}
-                                    className="px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer"
-                                >
-                                    {sub}
-                                </li>
-                                ))}
-                            </ul>
+                                {/* <FaChevronDown className="text-xs" /> */}
+
+                                {/* Submenu */}
+                                {/* <ul className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40">
+                                    {item.submenu.map((sub) => (
+                                    <li
+                                        key={sub}
+                                        className="px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer"
+                                    >
+                                        {sub}
+                                    </li>
+                                    ))}
+                                </ul> */}
                             </div>
                         ))}
                     </div>

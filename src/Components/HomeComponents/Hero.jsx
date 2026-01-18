@@ -1,0 +1,20 @@
+import React from 'react'
+import heroBg from '../../assets/images/HERO-COVER.jpg'
+import Button from '../Button/Button'
+
+const Hero = () => {
+    return (
+        <div className='my-10 '>
+            <div className='container mx-auto  bg-cover h-[70vh] px-10' style={{backgroundImage: `url(${heroBg})`}}>
+                <div className='w-1/2 h-full flex flex-col justify-center gap-2 '>
+                    <h2 className='textColor1 text-2xl '>70% off for Summer Sale </h2>
+                    <h1 className='textColor text-6xl font-bold mb-10 '>Biggest Sale For <span className='textColor1'>Man</span> & <span className='textColor1'>women</span></h1>
+
+                    <Button path="/products" title="Shop Now"/> 
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Hero
