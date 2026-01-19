@@ -24,3 +24,7 @@
 .bgColor1{
     background-color: #2FB991;
 }
+
+.customBorder{
+    border: 1px solid #F02640;
+}

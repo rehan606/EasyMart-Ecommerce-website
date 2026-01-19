@@ -1,19 +1,28 @@
 [
+
   {
     "id": 1,
     "name": "Clothes",
-    "categoryId": 102,
     "slug": "clothes",
     "icon": "tshirt",
     "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
     "description": "Trendy and comfortable clothing for everyday wear.",
-    "productCount": 6,
+    "productCount": 3,
     "status": "active"
   },
   {
     "id": 2,
+    "name": "Cosmetics",
+    "slug": "cosmetics",
+    "icon": "cosmetics",
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+    "description": "Premium beauty and skincare products.",
+    "productCount": 4,
+    "status": "active"
+  },
+      {
+    "id": 3,
     "name": "Watch",
-    "categoryId": 101,
     "slug": "watch",
     "icon": "watch",
     "image": "https://cdn-icons-png.flaticon.com/512/2972/2972528.png",
@@ -22,31 +31,18 @@
     "status": "active"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Sunglasses",
-    "categoryId": 103,
     "slug": "sunglasses",
     "icon": "sunglasses",
     "image": "https://cdn-icons-png.flaticon.com/512/3461/3461844.png",
     "description": "Stylish sunglasses with UV protection.",
-    "productCount": 4,
-    "status": "active"
-  },
-  {
-    "id": 4,
-    "name": "Cosmetics",
-    "categoryId": 104,
-    "slug": "cosmetics",
-    "icon": "cosmetics",
-    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
-    "description": "Premium beauty and skincare products.",
-    "productCount": 4,
+    "productCount": 3,
     "status": "active"
   },
   {
     "id": 5,
     "name": "Shirt",
-    "categoryId": 105,
     "slug": "shirt",
     "icon": "shirt",
     "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
@@ -57,7 +53,6 @@
   {
     "id": 6,
     "name": "Pant",
-    "categoryId": 106,
     "slug": "pant",
     "icon": "pant",
     "image": "https://cdn-icons-png.flaticon.com/512/892/892467.png",

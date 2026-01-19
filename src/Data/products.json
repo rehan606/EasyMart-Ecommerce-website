@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "Watch",
-    "categoryId": 101,
+    "categoryId": 3,
     "title": "Luxury Leather Strap Watch",
     "description": "Premium quality leather strap wrist watch with elegant design, perfect for formal and casual wear.",
     "brand": "TimeX",
@@ -23,7 +23,7 @@
   {
     "id": 2,
     "category": "Watch",
-    "categoryId": 101,
+    "categoryId": 3,
     "title": "Minimal Silver Wrist Watch",
     "description": "Minimalist silver watch with stainless steel body and clean dial design.",
     "brand": "Casio",
@@ -44,7 +44,7 @@
   {
     "id": 3,
     "category": "Sunglasses",
-    "categoryId": 103,
+    "categoryId": 4,
     "title": "Classic Black Sunglasses",
     "description": "UV protected classic black sunglasses suitable for all face shapes.",
     "brand": "RayBan",
@@ -65,7 +65,7 @@
   {
     "id": 4,
     "category": "Cosmetics",
-    "categoryId": 104,
+    "categoryId": 2,
     "title": "Matte Finish Lipstick",
     "description": "Long lasting matte lipstick with rich pigmentation and smooth finish.",
     "brand": "Maybelline",
@@ -86,7 +86,7 @@
   {
     "id": 5,
     "category": "Clothes",
-    "categoryId": 102,
+    "categoryId": 1,
     "title": "Premium Winter Hoodie",
     "description": "Soft and warm premium hoodie suitable for winter season.",
     "brand": "Nike",
@@ -108,7 +108,7 @@
   {
     "id": 6,
     "category": "Shirt",
-    "categoryId": 105,
+    "categoryId": 5,
     "title": "Formal Cotton Shirt",
     "description": "Breathable cotton formal shirt perfect for office and meetings.",
     "brand": "Zara",
@@ -130,7 +130,7 @@
   {
     "id": 7,
     "category": "Pant",
-    "categoryId": 106,
+    "categoryId": 6,
     "title": "Classic Denim Jeans",
     "description": "Durable denim jeans with modern slim fit design.",
     "brand": "Levis",
@@ -152,7 +152,7 @@
   {
     "id": 8,
     "category": "Cosmetics",
-    "categoryId": 104,
+    "categoryId": 2,
     "title": "Organic Face Cream",
     "description": "Natural organic face cream for glowing and healthy skin.",
     "brand": "Lakme",
@@ -174,7 +174,7 @@
   {
     "id": 9,
     "category": "Clothes",
-    "categoryId": 102,
+    "categoryId": 1,
     "title": "Casual Summer T-Shirt",
     "description": "Lightweight and breathable cotton t-shirt for everyday casual wear.",
     "brand": "H&M",
@@ -195,7 +195,7 @@
   {
     "id": 10,
     "category": "Shirt",
-    "categoryId": 105,
+    "categoryId": 5,
     "title": "Slim Fit Office Shirt",
     "description": "Modern slim fit shirt designed for office and professional use.",
     "brand": "Arrow",
@@ -216,7 +216,7 @@
   {
     "id": 11,
     "category": "Pant",
-    "categoryId": 106,
+    "categoryId": 6,
     "title": "Comfortable Chino Pant",
     "description": "Soft fabric chino pant with flexible fit for all day comfort.",
     "brand": "Uniqlo",
@@ -237,7 +237,7 @@
   {
     "id": 12,
     "category": "Watch",
-    "categoryId": 101,
+    "categoryId": 3,
     "title": "Smart Fitness Watch",
     "description": "Advanced smart watch with fitness tracking, heart rate and notifications.",
     "brand": "Xiaomi",
@@ -258,7 +258,7 @@
   {
     "id": 13,
     "category": "Sunglasses",
-    "categoryId": 103,
+    "categoryId": 4,
     "title": "Aviator Style Sunglasses",
     "description": "Stylish aviator sunglasses with UV protection and premium frame.",
     "brand": "Police",
@@ -279,7 +279,7 @@
   {
     "id": 14,
     "category": "Cosmetics",
-    "categoryId": 104,
+    "categoryId": 2,
     "title": "Luxury Perfume For Women",
     "description": "Long-lasting luxury perfume with floral and musky fragrance.",
     "brand": "Chanel",
@@ -300,7 +300,7 @@
   {
     "id": 15,
     "category": "Clothes",
-    "categoryId": 101,
+    "categoryId": 1,
     "title": "Stylish Denim Jacket",
     "description": "Premium denim jacket with modern street style design.",
     "brand": "Wrangler",
@@ -321,7 +321,7 @@
   {
     "id": 16,
     "category": "Pant",
-    "categoryId": 106,
+    "categoryId": 6,
     "title": "Sports Track Pant",
     "description": "Comfortable sports track pant suitable for gym and casual use.",
     "brand": "Adidas",
@@ -342,7 +342,7 @@
   {
     "id": 17,
     "category": "Shirt",
-    "categoryId": 105,
+    "categoryId": 5,
     "title": "Casual Checked Shirt",
     "description": "Trendy checked shirt perfect for casual outings and daily wear.",
     "brand": "Roadster",
@@ -363,7 +363,7 @@
   {
     "id": 18,
     "category": "Cosmetics",
-    "categoryId": 104,
+    "categoryId": 2,
     "title": "Professional Makeup Kit",
     "description": "All-in-one professional makeup kit for complete beauty solution.",
     "brand": "MAC",
@@ -384,7 +384,7 @@
   {
     "id": 19,
     "category": "Watch",
-    "categoryId": 101,
+    "categoryId": 3,
     "title": "Modern Digital Watch",
     "description": "Modern digital watch with water resistance and backlight display.",
     "brand": "Fossil",
@@ -405,7 +405,7 @@
   {
     "id": 20,
     "category": "Sunglasses",
-    "categoryId": 103,
+    "categoryId": 4,
     "title": "Premium Square Frame Sunglasses",
     "description": "Premium square frame sunglasses with polarized lenses.",
     "brand": "Gucci",

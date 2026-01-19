@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './Layouts/MainLayout';
 import Home from './Pages/Home/Home';
-import AllProducts from './Pages/AllProducts/AllProducts';
+import ShopPage from './Pages/ShopPage/ShopPage';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const App = () => {
         },
         {
           path: '/products', 
-          element: <AllProducts />
+          element: <ShopPage />
         },
       ]
     },
