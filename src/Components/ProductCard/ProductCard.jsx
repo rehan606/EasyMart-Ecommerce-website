@@ -1,4 +1,5 @@
 import { FaHeart, FaShoppingCart, FaEye, FaSyncAlt, FaStar, } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const ProductCard = ({ product }) => {
@@ -9,8 +10,8 @@ const ProductCard = ({ product }) => {
     price,
     salePrice,
     rating,
-    badge,
-    colors,
+    // badge,
+    // colors,
 
     // description,
     // brand,
@@ -22,7 +23,7 @@ const ProductCard = ({ product }) => {
   } = product;
 
   return (
-    <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
+    <Link to={`/products/${product.id}`} className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer">
       {/* Badge */}
     
 
@@ -91,13 +92,13 @@ const ProductCard = ({ product }) => {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
 const IconBtn = ({ icon }) => {
   return (
-    <button className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-zinc-600 hover:bg-orange-500 hover:text-white transition">
+    <button className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-zinc-600 hover:bg-[#F02640] hover:text-white transition">
       {icon}
     </button>
   );
