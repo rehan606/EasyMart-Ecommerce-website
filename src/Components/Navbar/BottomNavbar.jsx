@@ -22,14 +22,14 @@ const menuItems = [
     // submenu: ["Overview", "Updates"],
   },
   {
+    name: "Shop Now",
+    path: "/products",
+    // submenu: ["New Arrivals", "Best Sellers", "Top Rated"],
+  },
+  {
     name: "Categories",
     path: "/categories",
     // submenu: ["Electronics", "Fashion", "Groceries"],
-  },
-  {
-    name: "Products",
-    path: "/products",
-    // submenu: ["New Arrivals", "Best Sellers", "Top Rated"],
   },
   {
     name: "Blogs",

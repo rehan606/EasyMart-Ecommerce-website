@@ -1,53 +1,76 @@
 import React from 'react'
+import { FaApple } from 'react-icons/fa';
+import { FaGooglePlay } from 'react-icons/fa6';
 import { IoSearchSharp } from "react-icons/io5";
+import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="bg-zinc-100   pt-10 md:pt-20">
-            <div className="max-w-1400 mx-auto px-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
-                    <div className="pr-10">
-                        {/* Logo */}
-                        <Link to="/" className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</Link>
+            <div className="container mx-auto px-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
+                    {/* Logo */}
+                    <div className="col-span-2">
+                        <Link to="/" className="flex items-center gap-1">
+                            <LiaShoppingBagSolid className="text-2xl  textColor1 rounded-md " />
+                                
+                            <h2 className="text-2xl font-bold">Easy<span className="textColor1">Mart</span></h2>
+                           
+                        </Link>
+                        <p className='mt-4 text-sm'> EasyMart is the biggest Market of cloths, Accesorise, Children's, Men & Women collection </p>
 
-                        <p className="mt-4 text-zinc-800">Bred for a high content of beneficial substances. Our products adre aall fresh and health.</p>
+                        <div className='flex items-center gap-2 '>
+                            <button className="flex items-center gap-3 border border-gray-300  px-4 py-2 mt-6 hover:shadow-lg transition-all duration-300 bg-zinc-900 cursor-pointer">
+                                <FaGooglePlay className='text-3xl text-white'/>
+                                <div className='text-left'>
+                                    <span className='text-xs text-white '>GET IT ON</span>
+                                    <h3 className='font-bold text-sm text-white'>Google Play</h3>
+                                </div>  
+                            </button>
 
-                        <p className="mt-4 text-zinc-800"> <span className="text-orange-500"> {new Date().getFullYear()} </span> © All Right Reserved.  </p>
-
-                        
+                            <button className="flex items-center gap-3 border border-gray-300  px-4 py-2 mt-6 hover:shadow-lg transition-all duration-300 bg-zinc-900  cursor-pointer">
+                                <FaApple className='text-3xl text-white'/>
+                                <div className='text-left'>
+                                    <span className='text-xs text-white '>DOWNLOAD ON</span>
+                                    <h3 className='font-bold text-sm text-white'>App Store</h3>
+                                </div>  
+                            </button>
+                        </div>
                     </div>
 
                     {/* Company Links */}
                     <div className="">
-                        <h3 className="text-xl font-bold text-zinc-800 mb-4">Company</h3>
+                        <h3 className="text-md font-semibold textColor1 mb-4">Category</h3>
                         <ul className="space-y-3">
-                            <li className=""> <Link to={'/about'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">About</Link> </li>
-                            <li> <Link to={'/faq'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">FAQ's</Link> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1  transition-all duration-300 ">Men's </Link> </li>
+                            <li> <Link to={'/feedback'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Women's </Link> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Children's </Link> </li>
+                            <li className=""> <Link to={'/about'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Accesorise</Link> </li>
+                            <li> <Link to={'/faq'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Cloths</Link> </li>
                         </ul>
                     </div>
 
+                    
+
                     {/* Support Links */}
                     <div className="">
-                        <h3 className="text-xl font-bold text-zinc-800 mb-4">Support</h3>
+                        <h3 className="text-md font-semibold textColor1 mb-4">Company</h3>
                         <ul className="space-y-3">
-                            <li> <Link to={'/contact'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Support Center</Link> </li>
-                            <li> <Link to={'/feedback'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Feedback</Link> </li>
-                            <li> <Link to={'/contact'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Contact us</Link> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1  transition-all duration-300 ">Support Center</Link> </li>
+                            <li> <Link to={'/feedback'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Feedback</Link> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Contact us</Link> </li>
+                            <li className=""> <Link to={'/about'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">About</Link> </li>
+                            <li> <Link to={'/faq'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">FAQ's</Link> </li>
                         </ul>
                     </div>
 
                     {/* Newsletter */}
                     <div className="">
-                        <h3 className="text-xl font-bold text-zinc-800 mb-4">Stay Connected</h3>
+                        <h3 className="text-md font-semibold textColor1 mb-4">Contact </h3>
                         <p className="text-zinc-800">Question or Feedback? <br/> we'd love to hear from you. </p>
 
-                            <div className='p-1 items-center rounded-full border border-orange-400 flex mt-4 bg-white'>
-                                <input type="text" name='text' id='text' placeholder='Search...' autoComplete='off' className='flex-1 h-[5vh] px-3 outline-none '  />
-
-                                <button className='w-10 h-10 text-xl text-white rounded-full bg-linear-to-b from-orange-400 to-orange-500 flex items-center justify-center cursor-pointer '><IoSearchSharp /></button>
-
-                            </div> 
+                            
                     </div>
                 </div>   
                 
