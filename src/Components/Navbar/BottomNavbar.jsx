@@ -26,11 +26,11 @@ const menuItems = [
     path: "/products",
     // submenu: ["New Arrivals", "Best Sellers", "Top Rated"],
   },
-  {
-    name: "Categories",
-    path: "/categories",
-    // submenu: ["Electronics", "Fashion", "Groceries"],
-  },
+//   {
+//     name: "Categories",
+//     path: "/categories",
+//     // submenu: ["Electronics", "Fashion", "Groceries"],
+//   },
   {
     name: "Blogs",
     path: "/blogs",
@@ -43,8 +43,12 @@ const menuItems = [
   },
   {
     name: "Others",
-    path: "/others",
-    submenu: ["About Us", "Contact", "FAQ"],
+    path: "/",
+    submenu: [
+        { name: "About Us", path: "/about" },
+        { name: "Contact", path: "/contact" },
+        { name: "FAQ", path: "/faq" },
+    ],
   },
 ];
 
@@ -116,13 +120,18 @@ const BottomNavbar = () => {
                                                         opacity-0 invisible group-hover:opacity-100 group-hover:visible
                                                         transition-all duration-200 z-40">
                                             {item.submenu.map((sub) => (
-                                                <li
-                                                    key={sub}
-                                                    className="px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer"
-                                                >
-                                                    {sub}
+                                                <li key={sub.name} className="px-4 py-2 hover:bg-gray-100">
+                                                    <NavLink
+                                                    to={sub.path}
+                                                    className={({ isActive }) =>
+                                                        isActive ? "text-[#F02640]" : "text-gray-700"
+                                                    }
+                                                    >
+                                                    {sub.name}
+                                                    </NavLink>
                                                 </li>
                                             ))}
+
                                         </ul>
                                     )}
                                 </div>
@@ -185,11 +194,18 @@ const BottomNavbar = () => {
                                             </summary>
                                             <ul className="mt-2 ml-4">
                                                 {item.submenu.map((sub) => (
-                                                <li key={sub} className="py-1 text-sm text-gray-500">
-                                                    {sub}
-                                                </li>
+                                                    <li key={sub.name}>
+                                                    <NavLink
+                                                        to={sub.path}
+                                                        className="block py-1 text-sm text-gray-500"
+                                                        onClick={() => setMobileOpen(false)}
+                                                    >
+                                                        {sub.name}
+                                                    </NavLink>
+                                                    </li>
                                                 ))}
                                             </ul>
+
                                         </details>
                                     ) : (
                                         /* 👉 If NO submenu */
