@@ -1,6 +1,9 @@
 import React from "react";
 import { FaShippingFast, FaHeadset, FaShieldAlt, FaUndo } from "react-icons/fa";
 import Features from "../../Components/HomeComponents/Features";
+import about1 from '../../assets/images/about.png';
+import about2 from '../../assets/images/about-2.png';
+import about3 from '../../assets/images/about-3.png';
 
 const About = () => {
     return (
@@ -42,12 +45,15 @@ const About = () => {
                 </div>
 
                 {/* Image */}
-                <div className="flex justify-center">
-                    <img
-                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
-                    alt="About EasyMart"
-                    className="rounded-xl shadow-lg w-full max-w-md"
-                    />
+                <div className="flex items-center gap-4">
+                    
+                    <div className="">
+                        <img className="w-96 rounded-lg" src={about1} alt="about"/>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <img className="w-96 rounded-lg" src={about2} alt="about-image" />
+                        <img className="w-96 rounded-lg" src={about3} alt="about" />
+                    </div>
                 </div>
 
                 </div>
