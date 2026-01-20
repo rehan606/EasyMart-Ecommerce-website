@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-zinc-100   pt-10 md:pt-20">
-            <div className="container mx-auto px-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
+        <footer className="bg-zinc-100   pt-10 lg:pt-22">
+            <div className="container mx-auto px-4 md:px-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-6">
                     {/* Logo */}
-                    <div className="col-span-2">
+                    <div className="col-span-2 md:pr-20">
                         <Link to="/" className="flex items-center gap-1">
                             <LiaShoppingBagSolid className="text-2xl  textColor1 rounded-md " />
                                 
@@ -77,8 +77,8 @@ const Footer = () => {
             </div>
 
             {/* Developer Name  */}
-            <div className=' mt-20 text-center bg-zinc-900 text-white italic '>
-                <p className='py-4 text-sm font-light'>This website Developed By - <a className='textColor' href="https://www.linkedin.com/in/kh-rehan207/" target='_blank'>Rehan</a> </p> 
+            <div className=' mt-10 lg:mt-20 text-center bg-zinc-900 text-white italic '>
+                <p className='py-4 text-sm font-light'>This website Developed By - <a className='textColor1' href="https://www.linkedin.com/in/kh-rehan207/" target='_blank'>Rehan</a> </p> 
             </div>
         </footer>
     )

@@ -29,9 +29,9 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="pb-16 pt-10 lg:pt-16">
+      <div className="container mx-auto px-4 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-zinc-200 p-4 rounded-md">
           {features.map((item) => (
             <div
               key={item.id}
