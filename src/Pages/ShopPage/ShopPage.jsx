@@ -38,7 +38,7 @@ const ShopPage = () => {
 
   return (
     <section className="pb-10 mt-4">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-10">
 
             {/* ================= TOP BAR ================= */}
             <div className="flex items-center justify-between mb-6 border-b border-zinc-200 pb-4">
@@ -64,7 +64,7 @@ const ShopPage = () => {
                 </select>
             </div>
 
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid grid-cols-12 gap-4 lg:gap-6">
 
                 {/* ================= DESKTOP SIDEBAR ================= */}
                 <aside className="hidden md:block md:col-span-3">
