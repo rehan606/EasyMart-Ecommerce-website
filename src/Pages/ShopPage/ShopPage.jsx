@@ -37,7 +37,7 @@ const ShopPage = () => {
     }
 
   return (
-    <section className="py-10">
+    <section className="pb-10 mt-4">
         <div className="container mx-auto px-4">
 
             {/* ================= TOP BAR ================= */}
@@ -102,7 +102,7 @@ const ShopPage = () => {
 
                 {/* ================= PRODUCT GRID ================= */}
                 <div className="col-span-12 md:col-span-9">
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 border border-zinc-200 p-4 rounded-md">
                         {filteredProducts.map(product => (
                             <ProductCard key={product.id} product={product} />
                         ))}
