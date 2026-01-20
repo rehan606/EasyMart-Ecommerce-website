@@ -8,7 +8,7 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 
 const About = () => {
     return (
-        <section>
+        <section className="pt-10">
             {/* ===== Hero Section ===== */}
             <PageHeader title="About EasyMart" description='EasyMart is your trusted online marketplace where quality products, affordable prices, and fast delivery come together for a seamless shopping experience.' />
         
