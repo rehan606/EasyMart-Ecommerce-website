@@ -5,7 +5,7 @@
     "name": "Clothes",
     "slug": "clothes",
     "icon": "tshirt",
-    "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+    "image": "https://cdn-icons-png.flaticon.com/512/4273/4273296.png",
     "description": "Trendy and comfortable clothing for everyday wear.",
     "productCount": 3,
     "status": "active"
@@ -15,7 +15,7 @@
     "name": "Cosmetics",
     "slug": "cosmetics",
     "icon": "cosmetics",
-    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+    "image": "https://cdn-icons-png.flaticon.com/512/755/755967.png",
     "description": "Premium beauty and skincare products.",
     "productCount": 4,
     "status": "active"
@@ -25,7 +25,7 @@
     "name": "Watch",
     "slug": "watch",
     "icon": "watch",
-    "image": "https://cdn-icons-png.flaticon.com/512/2972/2972528.png",
+    "image": "https://cdn-icons-png.freepik.com/512/757/757769.png",
     "description": "Modern and luxury watches for all occasions.",
     "productCount": 4,
     "status": "active"
@@ -35,7 +35,7 @@
     "name": "Sunglasses",
     "slug": "sunglasses",
     "icon": "sunglasses",
-    "image": "https://cdn-icons-png.flaticon.com/512/3461/3461844.png",
+    "image": "https://cdn-icons-png.flaticon.com/512/88/88816.png",
     "description": "Stylish sunglasses with UV protection.",
     "productCount": 3,
     "status": "active"
@@ -45,7 +45,7 @@
     "name": "Shirt",
     "slug": "shirt",
     "icon": "shirt",
-    "image": "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+    "image": "https://cdn-icons-png.flaticon.com/512/392/392043.png",
     "description": "Formal and casual shirts for men.",
     "productCount": 3,
     "status": "active"
@@ -55,7 +55,7 @@
     "name": "Pant",
     "slug": "pant",
     "icon": "pant",
-    "image": "https://cdn-icons-png.flaticon.com/512/892/892467.png",
+    "image": "https://cdn-icons-png.freepik.com/256/13350/13350659.png?semt=ais_white_label",
     "description": "Comfortable pants and jeans for daily use.",
     "productCount": 3,
     "status": "active"
