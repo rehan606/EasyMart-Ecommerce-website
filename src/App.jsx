@@ -7,6 +7,7 @@ import ProductDetails from './Pages/ProductsDetails/ProductDetails';
 import About from './Pages/About/About';
 import BlogPage from './Pages/BlogPage/BlogPage';
 import Contact from './Pages/Contact/Contact';
+import Offers from './Pages/OfferPage/Offers';
 import Faq from './Pages/FAQ/Faq'; 
 
 const App = () => {
@@ -38,6 +39,10 @@ const App = () => {
         {
           path: '/contact', 
           element: <Contact />
+        },
+        {
+          path: '/offers', 
+          element: <Offers />
         },
         {
           path: '/faq', 
