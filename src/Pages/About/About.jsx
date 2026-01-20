@@ -1,9 +1,9 @@
 import React from "react";
 import { FaShippingFast, FaHeadset, FaShieldAlt, FaUndo } from "react-icons/fa";
 import Features from "../../Components/HomeComponents/Features";
-import about1 from '../../assets/images/about.png';
-import about2 from '../../assets/images/about-2.png';
-import about3 from '../../assets/images/about-3.png';
+import about1 from '../../assets/images/About-2.jpg';
+import about2 from '../../assets/images/About-1.jpg';
+import about3 from '../../assets/images/About-3.jpg';
 import PageHeader from "../../Components/PageHeader/PageHeader";
 
 const About = () => {
@@ -23,11 +23,11 @@ const About = () => {
                         <div className="flex items-center gap-4">
                             
                             <div className="">
-                                <img className="w-96 rounded-lg" src={about1} alt="about"/>
+                                <img className="w-96 rounded-lg hover:scale-110 transition-all duration-300" src={about1} alt="about"/>
                             </div>
                             <div className="flex flex-col gap-4">
-                                <img className="w-96 rounded-lg" src={about2} alt="about-image" />
-                                <img className="w-96 rounded-lg" src={about3} alt="about" />
+                                <img className="w-96 rounded-lg hover:scale-110 transition-all duration-300" src={about2} alt="about-image" />
+                                <img className="w-96 rounded-lg hover:scale-110 transition-all duration-300" src={about3} alt="about" />
                             </div>
                         </div>
 
