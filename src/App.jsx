@@ -10,6 +10,8 @@ import Contact from './Pages/Contact/Contact';
 import Offers from './Pages/OfferPage/Offers';
 import Faq from './Pages/FAQ/Faq'; 
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
+import Cart from './Pages/Cart/Cart';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -52,6 +54,14 @@ const App = () => {
         {
           path: '/login', 
           element: <Login />
+        },
+        {
+          path: '/register', 
+          element: <Register />
+        },
+        {
+          path: '/cart', 
+          element: <Cart />
         },
       ]
     },
