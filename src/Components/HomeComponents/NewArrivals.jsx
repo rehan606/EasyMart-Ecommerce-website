@@ -20,7 +20,7 @@ const NewArrivals = () => {
 
   return (
     <section>
-      <div className="container mx-auto px-10 pb-10">
+      <div className="container mx-auto px-4 md:px-10 pb-10">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-10 gap-6">
           <SectionTitle
             title="New"
@@ -29,7 +29,7 @@ const NewArrivals = () => {
           />
 
           {/* Category Buttons */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-2 md:gap-4">
             {/* All Button */}
             <button
               onClick={() => setActiveCategory('All')}
@@ -61,7 +61,7 @@ const NewArrivals = () => {
         </div>
 
         {/* Products */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 border border-zinc-200 p-4 rounded-md">
           {filteredProducts
             .sort((a, b) => b.rating - a.rating)
             .slice(0, 8)

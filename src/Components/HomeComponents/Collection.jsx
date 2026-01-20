@@ -16,7 +16,7 @@ const Collection = () => {
                         style={{ backgroundImage: `url(${collection1})` }}
                     >
                         {/* overlay */}
-                        <div className='absolute inset-0 bg-black/50'></div>
+                        <div className='absolute inset-0 bg-black/30'></div>
 
                         {/* content wrapper */}
                         <div className='relative z-10 flex flex-col items-end text-end gap-6'>
@@ -50,7 +50,7 @@ const Collection = () => {
                         style={{ backgroundImage: `url(${collection3})` }}
                     >
                         {/* overlay */}
-                        <div className='absolute inset-0 bg-black/50'></div>
+                        <div className='absolute inset-0 bg-black/40'></div>
 
                         {/* content wrapper */}
                         <div className='relative z-10 flex flex-col items-end text-end gap-6'>

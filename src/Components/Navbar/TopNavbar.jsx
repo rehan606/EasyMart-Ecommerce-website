@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const TopNavbar = () => {
     return (
         <section className=' customGrayBg py-2'>
-            <div className='container mx-auto px-10 flex items-center justify-between text-zinc-900 text-sm font-light'>
+            <div className='container mx-auto px-4 md:px-10 flex items-center justify-between text-zinc-900 text-sm font-light'>
                 {/* Contact  */}
                 <div className="flex items-center justify-between gap-4">
                     <div className='hidden md:flex items-center justify-between gap-2'>
