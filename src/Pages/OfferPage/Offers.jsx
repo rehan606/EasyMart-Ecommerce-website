@@ -77,7 +77,7 @@ const Offers = () => {
 
               <Link
                 to="/shop"
-                className="inline-block mt-4 bg-primary text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition"
+                className="inline-block mt-4 customBg text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition"
               >
                 Shop Now
               </Link>

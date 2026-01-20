@@ -9,6 +9,7 @@ import BlogPage from './Pages/BlogPage/BlogPage';
 import Contact from './Pages/Contact/Contact';
 import Offers from './Pages/OfferPage/Offers';
 import Faq from './Pages/FAQ/Faq'; 
+import Login from './Pages/Login/Login';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const App = () => {
         {
           path: '/faq', 
           element: <Faq />
+        },
+        {
+          path: '/login', 
+          element: <Login />
         },
       ]
     },
