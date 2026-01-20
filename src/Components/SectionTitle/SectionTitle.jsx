@@ -6,7 +6,7 @@ const SectionTitle = ({title, color, subtitle}) => {
             <div className="container mx-auto ">
                 <div className='flex items-center justify-between'>
                     <div>
-                        <h2 className='text-3xl font-semibold  '>{title} <span className='textColor1'>{color}</span></h2>
+                        <h2 className=' text-2xl md:text-3xl font-semibold  '>{title} <span className='textColor1'>{color}</span></h2>
                         <p className=' text-gray-600'>{subtitle}</p>
                     </div>
                 </div>

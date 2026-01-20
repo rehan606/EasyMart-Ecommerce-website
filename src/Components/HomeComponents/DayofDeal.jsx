@@ -8,9 +8,9 @@ const DayofDeal = () => {
 
     return (
         <section>
-            <div className='container mx-auto px-10 py-10'>
+            <div className='container mx-auto px-4 md:px-10 py-10'>
                 <div className='flex items-center justify-between'>
-                    <SectionTitle title="Day off The" color="Deal"  subtitle=" Don't wait, The time will never be just right "/>
+                    <SectionTitle title="Day off The" color="Deal"  subtitle=" Don't wait, The time will be end.   "/>
 
                     {/* Timer  */} 
                     <div>
@@ -18,7 +18,7 @@ const DayofDeal = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 border border-zinc-200 p-4 rounded-md'>
                     {
                         products.slice(-4).map(product => (
                             <ProductCard key={product.id} product={product} />
