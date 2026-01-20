@@ -60,6 +60,7 @@ const About = () => {
 
                     </div>
                 </section>
+            </div>
 
                 {/* ===== Features Section ===== */}
                 <section className="bg-gray-100 py-10 lg:py-16 px-4 md:px-10">
@@ -79,15 +80,13 @@ const About = () => {
                     <h2 className="text-3xl font-bold mb-6 text-gray-800">
                         Why Choose <span className="textColor1">EasyMart?</span> 
                     </h2>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed lg:px-20">
                         We believe shopping should be simple and enjoyable. EasyMart focuses
                         on quality, transparency, and customer trust — making us a reliable
                         choice for your everyday needs.
                     </p>
                     </div>
                 </section>
-
-            </div>
         </section>
     );
 };

@@ -4,14 +4,14 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-10">
 
         {/* ===== Header ===== */}
         <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-bold mb-3">
             Contact <span className="textColor1">Us</span>
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto px-6 md:px-20">
             Have questions or need support? Get in touch with EasyMart.
             We are always ready to help you.
           </p>
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-zinc-200 mt-16 pt-10">
 
           {/* ===== Contact Info ===== */}
-          <div className="space-y-6">
+          <div className="space-y-6 border border-zinc-200 rounded-md p-4">
             <div className="bg-white p-6 rounded-xl shadow flex items-center gap-4">
               <div className="customBg text-white p-3 rounded-full">
                 <FaPhoneAlt />
@@ -56,14 +56,14 @@ const Contact = () => {
           </div>
 
           {/* ===== Contact Form ===== */}
-          <div className=" p-4 border-2 border-white rounded-xl shadow-xl">
+          <div className=" p-4 border border-zinc-200 rounded-xl shadow-xl">
             <form className="space-y-5 bg-white p-4 rounded-xl shadow-lg">
               <div>
                 <label className="text-sm font-medium">Your Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full mt-1 px-4 py-2 border customBorder rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full mt-1 px-4 py-2 border border-zinc-200 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full mt-1 px-4 py-2 border customBorder rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full mt-1 px-4 py-2 border border-zinc-200 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 <textarea
                   rows="4"
                   placeholder="Write your message..."
-                  className="w-full mt-1 px-4 py-2 border customBorder rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full mt-1 px-4 py-2 border border-zinc-200 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
                 ></textarea>
               </div>
 
