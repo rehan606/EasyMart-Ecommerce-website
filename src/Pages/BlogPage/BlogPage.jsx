@@ -70,21 +70,21 @@ const BlogPage = () => {
         {/* ===== Header ===== */}
 
         <section className="bg-linear-to-r from-black via-[#F02640] to-black text-white py-20 px-4">
-            <div className="container mx-auto text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <div className="container mx-auto text-center md:px-20">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4">
                         EasyMart Blogs
                 </h1>
-                <p className="max-w-3xl mx-auto text-lg text-white/90">
+                <p className="max-w-3xl mx-auto md:text-lg text-white/90">
                     EasyMart is your trusted online marketplace where quality products,
                     affordable prices, and fast delivery come together for a seamless
                     shopping experience.
                 </p>
             </div>
         </section>
-    <div className="container mx-auto px-10 mt-10">
+      <div className="container mx-auto px-4 md:px-10 mt-10 md:mt-16 lg:mt-10">
 
         {/* ===== Blog Grid ===== */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:border md:border-zinc-200 rounded-lg p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 border border-zinc-200 rounded-lg p-6">
           {blogs.map((blog) => (
             <div
               key={blog.id}
