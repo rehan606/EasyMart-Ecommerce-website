@@ -6,6 +6,7 @@ import LatestBanner from '../../Components/HomeComponents/LetestBanner'
 import DayofDeal from '../../Components/HomeComponents/DayofDeal'
 import Collection from '../../Components/HomeComponents/Collection'
 import Features from '../../Components/HomeComponents/Features'
+import BrandPartners from '../../Components/HomeComponents/BrandPartners'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         <DayofDeal />
         <Collection />
         <Features />
+        <BrandPartners />
     </div>
   )
 }
