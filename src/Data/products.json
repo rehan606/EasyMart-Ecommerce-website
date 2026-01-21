@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "Watch",
+    "category": "watch",
     "categoryId": 3,
     "title": "Luxury Leather Strap Watch",
     "description": "Premium quality leather strap wrist watch with elegant design, perfect for formal and casual wear.",
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "category": "Watch",
+    "category": "watch",
     "categoryId": 3,
     "title": "Minimal Silver Wrist Watch",
     "description": "Minimalist silver watch with stainless steel body and clean dial design.",
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "category": "Sunglasses",
+    "category": "sunglasses",
     "categoryId": 4,
     "title": "Classic Black Sunglasses",
     "description": "UV protected classic black sunglasses suitable for all face shapes.",
@@ -64,7 +64,7 @@
   },
   {
     "id": 4,
-    "category": "Cosmetics",
+    "category": "cosmetics",
     "categoryId": 2,
     "title": "Matte Finish Lipstick",
     "description": "Long lasting matte lipstick with rich pigmentation and smooth finish.",
@@ -85,7 +85,7 @@
   },
   {
     "id": 5,
-    "category": "Clothes",
+    "category": "clothes",
     "categoryId": 1,
     "title": "Premium Winter Hoodie",
     "description": "Soft and warm premium hoodie suitable for winter season.",
@@ -129,7 +129,7 @@
 
   {
     "id": 7,
-    "category": "Pant",
+    "category": "pant",
     "categoryId": 6,
     "title": "Classic Denim Jeans",
     "description": "Durable denim jeans with modern slim fit design.",
@@ -151,7 +151,7 @@
 
   {
     "id": 8,
-    "category": "Cosmetics",
+    "category": "cosmetics",
     "categoryId": 2,
     "title": "Organic Face Cream",
     "description": "Natural organic face cream for glowing and healthy skin.",
@@ -173,7 +173,7 @@
 
   {
     "id": 9,
-    "category": "Clothes",
+    "category": "clothes",
     "categoryId": 1,
     "title": "Casual Summer T-Shirt",
     "description": "Lightweight and breathable cotton t-shirt for everyday casual wear.",
@@ -194,7 +194,7 @@
   },
   {
     "id": 10,
-    "category": "Shirt",
+    "category": "shirt",
     "categoryId": 5,
     "title": "Slim Fit Office Shirt",
     "description": "Modern slim fit shirt designed for office and professional use.",
@@ -215,7 +215,7 @@
   },
   {
     "id": 11,
-    "category": "Pant",
+    "category": "pant",
     "categoryId": 6,
     "title": "Comfortable Chino Pant",
     "description": "Soft fabric chino pant with flexible fit for all day comfort.",
@@ -236,7 +236,7 @@
   },
   {
     "id": 12,
-    "category": "Watch",
+    "category": "watch",
     "categoryId": 3,
     "title": "Smart Fitness Watch",
     "description": "Advanced smart watch with fitness tracking, heart rate and notifications.",
@@ -257,7 +257,7 @@
   },
   {
     "id": 13,
-    "category": "Sunglasses",
+    "category": "sunglasses",
     "categoryId": 4,
     "title": "Aviator Style Sunglasses",
     "description": "Stylish aviator sunglasses with UV protection and premium frame.",
@@ -278,7 +278,7 @@
   },
   {
     "id": 14,
-    "category": "Cosmetics",
+    "category": "cosmetics",
     "categoryId": 2,
     "title": "Luxury Perfume For Women",
     "description": "Long-lasting luxury perfume with floral and musky fragrance.",
@@ -299,7 +299,7 @@
   },
   {
     "id": 15,
-    "category": "Clothes",
+    "category": "clothes",
     "categoryId": 1,
     "title": "Stylish Denim Jacket",
     "description": "Premium denim jacket with modern street style design.",
@@ -320,7 +320,7 @@
   },
   {
     "id": 16,
-    "category": "Pant",
+    "category": "pant",
     "categoryId": 6,
     "title": "Sports Track Pant",
     "description": "Comfortable sports track pant suitable for gym and casual use.",
@@ -341,7 +341,7 @@
   },
   {
     "id": 17,
-    "category": "Shirt",
+    "category": "shirt",
     "categoryId": 5,
     "title": "Casual Checked Shirt",
     "description": "Trendy checked shirt perfect for casual outings and daily wear.",
@@ -362,7 +362,7 @@
   },
   {
     "id": 18,
-    "category": "Cosmetics",
+    "category": "cosmetics",
     "categoryId": 2,
     "title": "Professional Makeup Kit",
     "description": "All-in-one professional makeup kit for complete beauty solution.",
@@ -383,7 +383,7 @@
   },
   {
     "id": 19,
-    "category": "Watch",
+    "category": "watch",
     "categoryId": 3,
     "title": "Modern Digital Watch",
     "description": "Modern digital watch with water resistance and backlight display.",
@@ -404,7 +404,7 @@
   },
   {
     "id": 20,
-    "category": "Sunglasses",
+    "category": "sunglasses",
     "categoryId": 4,
     "title": "Premium Square Frame Sunglasses",
     "description": "Premium square frame sunglasses with polarized lenses.",

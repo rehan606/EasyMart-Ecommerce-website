@@ -12,6 +12,8 @@ import Faq from './Pages/FAQ/Faq';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Cart from './Pages/Cart/Cart';
+import CategoryProducts from './Pages/CategoryProduct/CategoryProducts';
+
 
 const App = () => {
   const router = createBrowserRouter([
@@ -62,6 +64,10 @@ const App = () => {
         {
           path: '/cart', 
           element: <Cart />
+        },
+        {
+          path: '/category/:slug', 
+          element: <CategoryProducts />
         },
       ]
     },
