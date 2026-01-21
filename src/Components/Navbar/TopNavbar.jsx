@@ -29,7 +29,7 @@ const TopNavbar = () => {
                     <ul className='flex items-center justify-end gap-4'>
                         <li className=""> <Link to={'/#'}>Help</Link> </li>
                         <li className=""> <Link to={'/#'}>Track Order</Link> </li>
-                        <li className=""> <Link to={'/#'}>Contact</Link> </li>
+                        <li className=""> <Link to={'/contact'}>Contact</Link> </li>
                     </ul>
                 </div>
             </div>

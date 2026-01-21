@@ -4,8 +4,12 @@ import { FaGooglePlay } from 'react-icons/fa6';
 import { IoSearchSharp } from "react-icons/io5";
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
+import useData from '../../Hooks/useData';
 
 const Footer = () => {
+
+    const {categories} = useData();
+
     return (
         <footer className="bg-zinc-100   pt-10 lg:pt-22">
             <div className="container mx-auto px-4 md:px-10">
@@ -42,12 +46,14 @@ const Footer = () => {
                     {/* Company Links */}
                     <div className="">
                         <h3 className="text-md font-semibold textColor1 mb-4">Category</h3>
-                        <ul className="space-y-3">
-                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1  transition-all duration-300 ">Men's </Link> </li>
-                            <li> <Link to={'/feedback'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Women's </Link> </li>
-                            <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Children's </Link> </li>
-                            <li className=""> <Link to={'/about'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Accesorise</Link> </li>
-                            <li> <Link to={'/faq'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Cloths</Link> </li>
+                        <ul className="space-y-3 flex flex-col">
+                            {
+                                categories.slice(0, 5).map(category => (
+                                    <Link to={`/category/${category.slug}`} className="text-zinc-800 hover:textColor1 hover:textColor transition-all duration-300 ">{category.name}</Link>
+                                ) )
+                            }
+                            
+                            
                         </ul>
                     </div>
 
