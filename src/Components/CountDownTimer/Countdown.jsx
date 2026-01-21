@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const Countdown = ({ endTime }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = new Date(endTime) - new Date();
     if (difference <= 0) {
       return { hours: 0, minutes: 0, seconds: 0 };
@@ -12,7 +12,7 @@ const Countdown = ({ endTime }) => {
       minutes: Math.floor((difference / (1000 * 60)) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-  };
+  },[endTime]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -22,7 +22,7 @@ const Countdown = ({ endTime }) => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   const format = (num) => String(num).padStart(2, "0");
 

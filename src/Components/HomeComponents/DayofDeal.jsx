@@ -16,7 +16,7 @@ const DayofDeal = () => {
                     {/* Timer  */} 
                     <div className='flex items-center justify-center gap-4'>
                         <h2 className="text-md font-semibold">Time End:</h2>
-                        <Countdown endTime={new Date().setHours(new Date().getHours() + 5)} />
+                        <Countdown endTime={new Date().setHours(new Date().getHours() + 20)} />
                     </div>
                 </div>
 
