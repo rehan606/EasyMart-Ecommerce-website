@@ -3,15 +3,9 @@ import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { BiCategory } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
+import useData from "../../Hooks/useData";
 
-const categories = [
-  "Electronics",
-  "Groceries",
-  "Fashion",
-  "Home & Kitchen",
-  "Beauty",
-  "Sports",
-];
+
 
 const countries = ["Bangladesh", "India", "USA", "UK", "Canada"];
 
@@ -59,6 +53,8 @@ const BottomNavbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState("Country");
 
+    const {categories} = useData();
+
     return (
         <section className="border-b border-t border-b-zinc-200 border-t-zinc-200 bg-white sticky top-0 z-30">
             <nav className="container mx-auto  px-4 md:px-10">
@@ -66,25 +62,26 @@ const BottomNavbar = () => {
                     
                     {/* Left - All Categories */}
                     <div className="relative">
-                    <button
-                        onClick={() => setCatOpen(!catOpen)}
-                        className="flex items-center gap-2 bg-[#F02640] text-white px-4 py-2 rounded-md text-sm font-medium"
-                    >
-                       <BiCategory /> All Categories <FaChevronDown />
-                    </button>
+                        <button
+                            onClick={() => setCatOpen(!catOpen)}
+                            className="flex items-center gap-2 bg-[#F02640] text-white px-4 py-2 rounded-md text-sm font-medium"
+                        >
+                        <BiCategory /> All Categories <FaChevronDown />
+                        </button>
 
-                    {catOpen && (
-                        <ul className="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-md z-50">
-                        {categories.map((cat) => (
-                            <li
-                            key={cat}
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm"
-                            >
-                            {cat}
-                            </li>
-                        ))}
-                        </ul>
-                    )}
+                        {catOpen && (
+                            <ul className="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-md z-50 flex flex-col">
+                                {categories.map((category) => (
+                                    <Link to={`/category/${category.slug}`} 
+                                    key={category.id}
+                                    onClick={() => setCatOpen(false)}
+                                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm"
+                                    >
+                                    {category.name} 
+                                    </Link>
+                                ))}
+                            </ul>
+                        )}
                     </div>
 
                    
