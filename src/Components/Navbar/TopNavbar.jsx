@@ -27,7 +27,7 @@ const TopNavbar = () => {
                 {/* Usefull Links  */}
                 <div className="hidden md:flex">
                     <ul className='flex items-center justify-end gap-4'>
-                        <li className=""> <Link to={'/#'}>Help</Link> </li>
+                        <li className=""> <Link to={'/contact'}>Help</Link> </li>
                         <li className=""> <Link to={'/#'}>Track Order</Link> </li>
                         <li className=""> <Link to={'/contact'}>Contact</Link> </li>
                     </ul>

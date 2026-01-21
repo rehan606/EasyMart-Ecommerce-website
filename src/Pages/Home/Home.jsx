@@ -9,7 +9,10 @@ import Features from '../../Components/HomeComponents/Features'
 import BrandPartners from '../../Components/HomeComponents/BrandPartners'
 
 
+
 const Home = () => {
+
+
   return (
     <div>
         <Hero />
