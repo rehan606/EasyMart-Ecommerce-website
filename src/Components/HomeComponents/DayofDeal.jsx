@@ -2,6 +2,7 @@ import React from 'react'
 import SectionTitle from '../SectionTitle/SectionTitle'
 import useData from '../../Hooks/useData';
 import ProductCard from '../ProductCard/ProductCard';
+import Countdown from '../CountDownTimer/Countdown';
 
 const DayofDeal = () => {
     const {products} = useData();
@@ -13,8 +14,9 @@ const DayofDeal = () => {
                     <SectionTitle title="Day off The" color="Deal"  subtitle=" Don't wait, The time will be end.   "/>
 
                     {/* Timer  */} 
-                    <div>
-                        <h3>00:00:00</h3>
+                    <div className='flex items-center justify-center gap-4'>
+                        <h2 className="text-md font-semibold">Time End:</h2>
+                        <Countdown endTime={new Date().setHours(new Date().getHours() + 5)} />
                     </div>
                 </div>
 

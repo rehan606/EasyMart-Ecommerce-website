@@ -1,4 +1,5 @@
 import { FaShippingFast, FaHeadset, FaUndoAlt, FaLock } from "react-icons/fa";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Features = () => {
   const features = [
@@ -29,8 +30,15 @@ const Features = () => {
   ];
 
   return (
-    <section className="pb-16 pt-10 lg:pt-16">
+    <section className="pb-16 pt-10 ">
       <div className="container mx-auto px-4 md:px-10">
+
+        {/* Section Title */}
+        <div className="mb-10">
+            <SectionTitle title='Why Choose' color="us" subtitle=" Our Features " />
+        </div>
+
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-zinc-200 p-4 rounded-md">
           {features.map((item) => (
             <div
