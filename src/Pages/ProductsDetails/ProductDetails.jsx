@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { FaStar } from "react-icons/fa"
 import ProductCard from '../../Components/ProductCard/ProductCard'
 import SectionTitle from '../../Components/SectionTitle/SectionTitle'
+import ProductDetailsSkeleton from '../../Components/LoadingSkeleton/ProductDetailsSkeleton'
 
 const ProductDetails = () => {
     const { products } = useData()
@@ -26,9 +27,7 @@ const ProductDetails = () => {
     // ===== Loading state =====
     if (!product) {
         return (
-        <div className="py-20 text-center text-gray-500">
-            Loading product details...
-        </div>
+        <ProductDetailsSkeleton />
         )
     }
 
