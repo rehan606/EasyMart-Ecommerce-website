@@ -13,6 +13,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Cart from './Pages/Cart/Cart';
 import CategoryProducts from './Pages/CategoryProduct/CategoryProducts';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     {
       path: "/",
       element: <MainLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: '/', 
