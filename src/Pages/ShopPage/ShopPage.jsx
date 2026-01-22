@@ -13,6 +13,7 @@ const ShopPage = () => {
     const [sortType, setSortType] = useState('default')              // sorting
     const [priceRange, setPriceRange] = useState(10000)              // price filter
     const [showFilter, setShowFilter] = useState(false)              // mobile filter drawer
+ 
 
     // ================= CATEGORY CLICK =================
     const handleCategoryClick = (categoryId) => {

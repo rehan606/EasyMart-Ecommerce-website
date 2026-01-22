@@ -1,22 +1,25 @@
-import React from 'react';
-import { FaShoppingBag, FaAppleAlt, FaTshirt, FaMobileAlt } from 'react-icons/fa';
+import React, { useState} from 'react';
 
-const Loader = ({ text = 'Loading EasyMart...' }) => {
+const Loader = () => {
+  const [loading] = useState(true);
+
+
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-white/70 z-50">
-      {/* Animated Icons */}
-      <div className="flex space-x-4 mb-6 animate-bounce">
-        <FaShoppingBag className="text-[#F02640] w-10 h-10" />
-        <FaAppleAlt className="text-green-500 w-10 h-10" />
-        <FaTshirt className="text-blue-500 w-10 h-10" />
-        <FaMobileAlt className="text-yellow-500 w-10 h-10" />
-      </div>
-
-      {/* Spinner */}
-      <div className="w-16 h-16 border-4 border-t-[#F02640] border-gray-200 rounded-full animate-spin"></div>
-
-      {/* Loading Text */}
-      <p className="mt-4 text-lg font-semibold text-gray-700">{text}</p>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      {loading ? (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+            {/* Spinner */}
+            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-red-500 border-solid border-b-transparent"></div>
+            {/* Loading Text */}
+          <p className="mt-4  ">Welcome to!</p>
+            <p className=" textColor1 text-2xl md:text-3xl lg:text-5xl font-bold"> <span className="text-zinc-800">Easy</span>Mart</p>
+            <p className="mt-4  ">Your Shopping Destination</p>
+        </div>
+      ) : (
+        <div className="textColor1 text-2xl font-bold">
+          Welcome to EasyMart!
+        </div>
+      )}
     </div>
   );
 };
