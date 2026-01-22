@@ -3,6 +3,7 @@ import useData from '../../Hooks/useData'
 import ProductCard from '../../Components/ProductCard/ProductCard'
 import { FiFilter } from 'react-icons/fi'
 import { IoClose } from 'react-icons/io5'
+import LoadingSkeleton from '../../Components/LoadingSkeleton/LoadingSkeleton'
 
 const ShopPage = () => {
     const { products, categories } = useData()
@@ -34,6 +35,11 @@ const ShopPage = () => {
     }
     if (sortType === 'highToLow') {
         filteredProducts.sort((a, b) => b.price - a.price)
+    }
+
+    // Loading Skeleton while data is being fetched
+    if (products.length === 0) {
+        return <LoadingSkeleton />
     }
 
   return (
