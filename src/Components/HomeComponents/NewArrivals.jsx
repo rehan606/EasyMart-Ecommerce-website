@@ -28,7 +28,7 @@ const NewArrivals = () => {
           <SectionTitle
             title="New"
             color="Arrivals"
-            subtitle="This is a new section"
+            subtitle="New Arrivals Product are here"
           />
 
           {/* Category Buttons */}

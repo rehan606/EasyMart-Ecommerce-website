@@ -5,8 +5,7 @@ It provides a smooth shopping experience with category filtering, product browsi
 
 ## 🔗 Live Demo
 
-👉 Live Site: Add your live link here
-👉 Frontend Repository: This repository
+👉 Live Site
 
 ## ✨ Features
 
@@ -93,6 +92,10 @@ It provides a smooth shopping experience with category filtering, product browsi
 
 ## 📁 Project Structure
 ```bash
+public/
+├── Data/
+│   ├── products.json/
+│   └── category.json/
 src/
 ├── assets/
 │   └── images/
@@ -127,9 +130,6 @@ src/
 │   └── useData.js
 ├── layouts/
 │   └── MainLayout.jsx
-├── Data/
-│   ├── products.json/
-│   └── category.json/
 └──-------------------
 ```
 
