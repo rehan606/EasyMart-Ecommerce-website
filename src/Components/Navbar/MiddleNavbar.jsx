@@ -12,7 +12,7 @@ const MiddleNavbar = () => {
                 <div className='flex items-center justify-between py-4'>
                     {/* Logo */}
                     <div>
-                        <Link to="/" className="flex items-center gap-1">
+                        <Link to="/" className="flex items-center gap-1 hover:scale-110 transition-transform">
                             <LiaShoppingBagSolid className="text-2xl  textColor1 rounded-md " />
                                 
                             <h2 className="text-2xl font-bold">Easy<span className="textColor1">Mart</span></h2>
@@ -27,10 +27,10 @@ const MiddleNavbar = () => {
                     </div>
 
                     {/*User and Cart Icon  */}
-                    <div className='flex items-center  gap-6'>
-                        <Link to='/login' className='hidden md:flex items-center  gap-2'>
+                    <div className='flex items-center gap-2 md:gap-6'>
+                        <Link to='/login' className='flex items-center  gap-2'>
                             <AiOutlineUser className='text-2xl' />
-                            <div className='textColor'>
+                            <div className='hidden md:block textColor'>
                                 <span className="text-xs">Account</span>
                                 <h2 className='text-xs font-semibold uppercase'>Login</h2>
                             </div>
@@ -38,7 +38,7 @@ const MiddleNavbar = () => {
                         <Link to="/cart" className='flex items-center  gap-2'>
                             
                             <PiShoppingCartSimpleLight className='text-2xl' />
-                            <div className='textColor'>
+                            <div className='hidden md:block textColor'>
                                 <span className="text-xs">Cart</span>
                                 <h2 className='text-xs font-semibold uppercase'>0-items</h2>
                             </div>

@@ -83,16 +83,16 @@ const removeItem = (id) => {
                 {cartItems.map((item) => (
                 <div
                     key={item.id}
-                    className="flex flex-col sm:flex-row gap-4 bg-white p-5 rounded-xl shadow"
+                    className="flex items-center  gap-4 bg-white p-5 rounded-xl shadow"
                 >
                     <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full sm:w-28 h-28 object-fit rounded-lg"
+                    className="w-20 h-20 md:w-28 md:h-28 object-fit rounded-lg"
                     />
 
                     <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-md md:text-lg font-semibold text-gray-800">
                         {item.name}
                     </h3>
                     <p className="text-gray-500 mt-1">
