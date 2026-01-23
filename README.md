@@ -5,7 +5,8 @@ It provides a smooth shopping experience with category filtering, product browsi
 
 ## 🔗 Live Demo
 
-👉 Live Site
+👉 [Live Site](https://easymart-ecom.netlify.app/)
+
 
 ## ✨ Features
 
@@ -17,12 +18,24 @@ It provides a smooth shopping experience with category filtering, product browsi
 
 - New arrivals & best-selling products
 
+- Offer Banner
+
+- Day of the Deal
+
+- Why choose us
+
+- Our Trusted Brands
+
 - Global loading spinner
 
 
 ## 🛍 Shop Page
 
 - Category-based product filtering
+
+- Price range product filtering
+
+- Sort by price 
 
 - Responsive product grid (4 cards per row on desktop)
 
