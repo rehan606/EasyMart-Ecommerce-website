@@ -90,7 +90,7 @@ const Faq = () => {
         <p className="text-zinc-300 mb-6">
           Our support team is always ready to help you.
         </p>
-        <Link to={'/contact'} className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition">
+        <Link to={'/contact'} className="customBg hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition">
           Contact Support
         </Link>
       </section>

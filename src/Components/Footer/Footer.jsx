@@ -5,6 +5,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import useData from '../../Hooks/useData';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Footer = () => {
 
@@ -45,7 +46,7 @@ const Footer = () => {
 
                     {/* Company Links */}
                     <div className="">
-                        <h3 className="text-md font-semibold textColor1 mb-4">Category</h3>
+                        <h3 className="text-md md:text-lg font-semibold textColor1 mb-4">Category</h3>
                         <ul className="space-y-3 flex flex-col">
                             {
                                 categories.slice(0, 5).map(category => (
@@ -61,7 +62,7 @@ const Footer = () => {
 
                     {/* Support Links */}
                     <div className="">
-                        <h3 className="text-md font-semibold textColor1 mb-4">Company</h3>
+                        <h3 className="text-md md:text-lg font-semibold textColor1 mb-4">Company</h3>
                         <ul className="space-y-3">
                             <li> <Link to={'/contact'} className="text-zinc-800 hover:textColor1  transition-all duration-300 ">Support Center</Link> </li>
                             <li> <Link to={'/feedback'} className="text-zinc-800 hover:textColor1 transition-all duration-300 ">Feedback</Link> </li>
@@ -73,9 +74,10 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div className="">
-                        <h3 className="text-md font-semibold textColor1 mb-4">Contact </h3>
+                        <h3 className="text-md md:text-lg font-semibold textColor1 mb-4">Contact </h3>
                         <p className="text-zinc-800">Question or Feedback? <br/> we'd love to hear from you. </p>
-
+                        
+                        <SocialLinks />
                             
                     </div>
                 </div>   
