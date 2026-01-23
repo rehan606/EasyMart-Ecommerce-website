@@ -10,7 +10,7 @@ It provides a smooth shopping experience with category filtering, product browsi
 
 ## ✨ Features
 
-### 🏠 Home Page
+## 🏠 Home Page
 
 - Hero section
 
